@@ -17,20 +17,13 @@ namespace Bai7_HinhChuNhat_Winform
             InitializeComponent();
         }
 
-        private void btnCV_Click(object sender, EventArgs e)
+private void btnTinh_Click(object sender, EventArgs e)
         {
-            double cd = Convert.ToDouble(txtCD.Text);
-            double cr = Convert.ToDouble(txtCR.Text);
-            double p = (cd + cr) * 2;
-            txtKQ.Text = p.ToString();
+            double cd = double.Parse(txtCD.Text);
+            double cr = double.Parse(txtCR.Text);
+            lblKQ.Text = "- Diện tích: " + TinhDT(cd, cr) + "\n- Chu vi: " + TinhCV(cd, cr);
         }
-
-        private void btnDT_Click(object sender, EventArgs e)
-        {
-            double cd = Convert.ToDouble(txtCD.Text);
-            double cr = Convert.ToDouble(txtCR.Text);
-            double s = cd * cr;
-            txtKQ.Text = s.ToString();
-        }
+        double TinhDT (double cd, double cr) { return cd * cr; }
+        double TinhCV (double cd, double cr) { return  (cd + cr)*2; }
     }
 }

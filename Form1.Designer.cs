@@ -33,10 +33,8 @@
             this.txtCD = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCR = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtKQ = new System.Windows.Forms.TextBox();
-            this.btnCV = new System.Windows.Forms.Button();
-            this.btnDT = new System.Windows.Forms.Button();
+            this.lblKQ = new System.Windows.Forms.Label();
+            this.btnTinh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,51 +78,32 @@
             this.txtCR.Size = new System.Drawing.Size(136, 32);
             this.txtCR.TabIndex = 2;
             // 
-            // label4
+            // lblKQ
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 150);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 26);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Kết quả";
+            this.lblKQ.AutoSize = true;
+            this.lblKQ.Location = new System.Drawing.Point(12, 150);
+            this.lblKQ.Name = "lblKQ";
+            this.lblKQ.Size = new System.Drawing.Size(87, 26);
+            this.lblKQ.TabIndex = 1;
+            this.lblKQ.Text = "Kết quả";
             // 
-            // txtKQ
+            // btnTinh
             // 
-            this.txtKQ.Location = new System.Drawing.Point(136, 150);
-            this.txtKQ.Name = "txtKQ";
-            this.txtKQ.Size = new System.Drawing.Size(136, 32);
-            this.txtKQ.TabIndex = 2;
-            // 
-            // btnCV
-            // 
-            this.btnCV.Location = new System.Drawing.Point(17, 203);
-            this.btnCV.Name = "btnCV";
-            this.btnCV.Size = new System.Drawing.Size(122, 48);
-            this.btnCV.TabIndex = 3;
-            this.btnCV.Text = "Chu vi";
-            this.btnCV.UseVisualStyleBackColor = true;
-            this.btnCV.Click += new System.EventHandler(this.btnCV_Click);
-            // 
-            // btnDT
-            // 
-            this.btnDT.Location = new System.Drawing.Point(145, 203);
-            this.btnDT.Name = "btnDT";
-            this.btnDT.Size = new System.Drawing.Size(122, 48);
-            this.btnDT.TabIndex = 4;
-            this.btnDT.Text = "Diện tích";
-            this.btnDT.UseVisualStyleBackColor = true;
-            this.btnDT.Click += new System.EventHandler(this.btnDT_Click);
+            this.btnTinh.Location = new System.Drawing.Point(136, 243);
+            this.btnTinh.Name = "btnTinh";
+            this.btnTinh.Size = new System.Drawing.Size(122, 48);
+            this.btnTinh.TabIndex = 3;
+            this.btnTinh.Text = "Tính";
+            this.btnTinh.UseVisualStyleBackColor = true;
+            this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 463);
-            this.Controls.Add(this.btnDT);
-            this.Controls.Add(this.btnCV);
-            this.Controls.Add(this.txtKQ);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnTinh);
+            this.Controls.Add(this.lblKQ);
             this.Controls.Add(this.txtCR);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCD);
@@ -146,10 +125,8 @@
         private System.Windows.Forms.TextBox txtCD;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCR;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtKQ;
-        private System.Windows.Forms.Button btnCV;
-        private System.Windows.Forms.Button btnDT;
+        private System.Windows.Forms.Label lblKQ;
+        private System.Windows.Forms.Button btnTinh;
     }
 }
 
